@@ -4,20 +4,32 @@ import { Avatar } from "antd";
 
 const navLinks = [
   {
-    title: "Home",
+    title: "Blog",
     path: "/",
   },
   {
-    title: "Blog",
-    path: "/blog",
+    title: "Web Dev",
+    path: "/web-dev",
   },
   {
-    title: "Contact us",
-    path: "/contact-us",
+    title: "Cloud",
+    path: "/cloud",
+  },
+  {
+    title: "Algorithms",
+    path: "/algos",
+  },
+  {
+    title: "Brain Hacking",
+    path: "/health",
   },
   {
     title: "Login",
     path: "/login",
+  },
+  {
+    title: "Post Viewer",
+    path: "/post",
   },
 ];
 
@@ -26,7 +38,7 @@ export default function Navigation({ user }) {
 
   return (
     <nav className="site-navigation">
-      <span className="menu-title">Fox Blog</span>
+      <span className="menu-title">LA SALLE</span>
       <div className={`menu-content-container ${menuActive && "active"}`}>
         <ul>
           {navLinks.map((link, index) => {
